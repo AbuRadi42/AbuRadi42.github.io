@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Canela;
+    src: url(../fonts/Canela/Canela-Regular.otf) format('opentype'), url(../fonts/Canela/Canela-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(../fonts/Consolas/CONSOLA.TTF) format('truetype'),
+        url(../fonts/Consolas/CONSOLAB.TTF) format('truetype'),
+        url(../fonts/Consolas/Consolas.ttf) format('truetype'),
+        url(../fonts/Consolas/consolaz.ttf) format('truetype'),
+        url(../fonts/Consolas/consolai.ttf) format('truetype');
+}
+
+body, body div div.as {
+    background-image: url(../../assets/tile.jpeg);
+    background-repeat: repeat;
+
+    font-family: Canela;
+}
+
+body div div.as {
+    background: #f0f0f024;
+    box-shadow: -9px -9px 18px white, 9px 9px 18px #cccccc;
+
+    transition: 400ms;
+}
+
+body div div.as:hover {
+    box-shadow: -5px -5px 10px white, 5px 5px 10px #cccccc;
+
+    transition: 400ms;
+}
+
+#underscore {
+    animation: ping1st 1200ms infinite, ping2nd 1200ms infinite;
+
+    animation-name: ping1st, ping2nd;
+    animation-duration: 1200ms, 1200ms;
+    animation-delay: 0s, 1200ms;
+    animation-iteration-count: infinite, infinite;
+}
+
+@-webkit-keyframes ping1st {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ping2nd {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dIcon {
+    -webkit-filter: drop-shadow(2px 2px 1px #cccccc);
+    filter: drop-shadow(2px 2px 1px #cccccc);
+}
+
+h1 {
+    /* color: transparent;
+
+    background: linear-gradient(135deg, #021, #010);
+    text-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #cccccc;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; */
+
+    color: #021;
+}
+
+.domain {
+    padding: 12px;
+    margin: 6px 0px;
+    border-radius: 21px;
+
+    line-height: 1.5rem;
+
+    cursor: default;
+}
+
+.empty {
+    padding: 12px;
+    margin: 6px 0px;
+    border-radius: 21px;
+
+    line-height: 1.5rem;
+
+    cursor: default;
+}
+
+.domain1st {
+    background: linear-gradient(135deg, #f0f0f0, #f0f0f0);
+    box-shadow: inset 10px 10px 30px #b5b5b5, inset -10px -10px 30px #ffffff;
+
+    text-shadow: 2px 2px 1px #cccccc;
+
+    /* -webkit-filter: drop-shadow(2px 2px 1px #cccccc);
+    filter: drop-shadow(2px 2px 1px #cccccc); */
+
+    transition: 400ms;
+}
+
+.domain1st:hover {
+    background: linear-gradient(135deg, #f0f0f0, #f0f0f0);
+    box-shadow: inset 0px 0px 0px #b5b5b5, inset 0px 0px 0px #ffffff;
+
+    text-shadow: 0px 0px 0px #cccccc;
+
+    /* -webkit-filter: drop-shadow(0px 0px 0px #cccccc);
+    filter: drop-shadow(0px 0px 0px #cccccc); */
+
+    transition: 400ms;
+}
+
+.domain2nd {
+    padding: 12px;
+    background: linear-gradient(135deg, #f0f0f0, #f0f0f0);
+    box-shadow: 0px 0px 0px #b5b5b5, 0px 0px 0px #ffffff;
+
+    /* font-size: 16px; */
+
+    transition: 400ms;
+}
+
+.domain2nd:hover {
+    padding: auto 12px;
+    background: linear-gradient(135deg, #f0f0f0, #d8d8d8);
+    box-shadow: 2px 2px 4px #b5b5b5, -2px -2px 4px #ffffff;
+
+    font-size: 16.5px;
+
+    transition: 400ms;
+}
+
+.icon {
+    width: 100%;
+    padding: 9px;
+    margin: 6px 0px;
+    background: #f9f9f9;
+    border-radius: 21px;
+
+    transition: 400ms;
+    cursor: default;
+}
+
+.weThinkCode:hover {
+    width: calc(300% + 1.25rem);
+    padding: 6px;
+    /* background: linear-gradient(135deg, #91a5b563, #acc4d963); */
+    background: #093555;
+    border: #093555 solid 1px;
+    border-radius: 21px;
+
+    /* box-shadow:  20px 20px 60px #7a8b99, -20px -20px 60px #c8e3f9; */
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #c8e3f9;
+
+    transition: 400ms;
+}
+
+.UoPeople:hover {
+    width: calc(300% + 1.25rem);
+    margin-left: calc(-100% - 0.625rem);
+    padding: 6px;
+    background: #4f245c;
+    border: #4f245c solid 1px;
+    border-radius: 21px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #3c1b4663;
+
+    transition: 400ms;
+}
+
+.WQU:hover {
+    width: calc(300% + 1.25rem);
+    padding: 6px;
+    background: #40365e;
+    border: #40365e solid 1px;
+    border-radius: 21px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #31294763;
+
+    transition: 400ms;
+}
+
+.moreInfo {
+    animation: showInfo 400ms;
+
+    animation-name: showInfo;
+    animation-duration: 400ms;
+    animation-delay: 400s;
+}
+
+@-webkit-keyframes showInfo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.badge {
+    width: 100%;
+    padding: 15px;
+    margin: 6px 0px;
+    background: #f9f9f9;
+    border-radius: 21px;
+
+    transition: 400ms;
+    cursor: default;
+}
+
+.badge:hover {
+    padding: 6px;
+    border: #f5f5f5 solid 1px;
+
+    transition: 400ms;
+}
+
+.logo {
+    width: 100%;
+    padding: 9px;
+    margin: 6px 0px;
+    background: #f9f9f9;
+    border-radius: 21px;
+
+    transition: 400ms;
+    cursor: default;
+}
+
+.QuarkTech:hover {
+    width: calc(300% + 1.25rem);
+    padding: 6px;
+    background: black;
+    border: black solid 1px;
+    border-radius: 6px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #00000063;
+
+    transition: 400ms;
+}
+
+.Yiya1st .moreInfo img {
+    height: inherit;
+    width: auto;
+}
+
+.Yiya1st:hover {
+    width: calc(300% + 1.25rem);
+    margin-left: calc(-100% - 0.625rem);
+    background: #ffe8d6;
+    border: #ffe8d6 solid 1px;
+    border-radius: 6px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #00000063;
+
+    transition: 400ms;
+}
+
+.theFOUR:hover {
+    width: calc(300% + 1.25rem);
+    margin-left: calc(-200% - 1.25rem);
+    background: #f5f5f5;
+    border: black solid 1px;
+    border-radius: 21px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #00000063;
+
+    transition: 400ms;
+}
+
+.Yiya2nd .moreInfo img {
+    height: inherit;
+    width: auto;
+}
+
+.Yiya2nd:hover {
+    width: calc(300% + 1.25rem);
+    background: #ffe8d6;
+    border: #ffe8d6 solid 1px;
+    border-radius: 6px;
+
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #00000063;
+
+    transition: 400ms;
+}
+
+.CODE:hover {
+    width: calc(300% + 1.25rem);
+    padding: 6px;
+    /* background: linear-gradient(135deg, #91a5b563, #acc4d963); */
+    background: black;
+    border: black solid 1px;
+    border-radius: 21px;
+
+    /* box-shadow:  20px 20px 60px #7a8b99, -20px -20px 60px #c8e3f9; */
+    box-shadow: -2px -2px 4px #f0f0f0, 2px 2px 4px #c8e3f9;
+
+    transition: 400ms;
+}
